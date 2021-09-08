@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 id="document-title">Лабораторная работа 2</h1>
+    <table class="top-table">
+        <tr>
+            <th>Фамилия Имя Отчество</th>
+            <th>Дата рождения</th>
+        </tr>
+        <tr>
+            <td class="green-cell">Иванов Иван</td>
+            <td>12.12.12</td>
+        </tr>
+        <tr>
+            <td class="green-cell">Петров Петр</td>
+            <td class="green-cell vat">01.01.01</td>
+        </tr>
+    </table>
+    <table class="spanned-table">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th rowspan="3">3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+<!--            <td>2</td>-->
+<!--            <td>3</td>-->
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+<!--            <td>3</td>-->
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <h2>Списки</h2>
+    <p>Это список (совершенно неправильно!): <br>
+        - первый элемент <br>
+        - второй элемент <br>
+        - третий элемент
+    </p>
+    <ul>
+        <li>контент</li>
+        <li>контент</li>
+        <li>контент</li>
+    </ul>
+    <ol>
+        <li>контент</li>
+        <li>контент</li>
+        <li>контент</li>
+    </ol>
+    <ul>
+        <li>first item</li>
+        <li>second item
+            <!-- Look, the closing </li> tag is not placed here! -->
+            <ol class="inner-ol" start="4">
+                <li>second item first subitem</li>
+                <li>item</li>
+                <li>item</li>
+                <li value="15">second item second subitem
+                    <!-- Same for the second nested unordered list! -->
+                    <ul>
+                        <li>second item second subitem first sub-subitem</li>
+                        <li>second item second subitem second sub-subitem</li>
+                        <li>second item second subitem third sub-subitem</li>
+                    </ul>
+                </li> <!-- Closing </li> tag for the li that
+                  contains the third unordered list -->
+                <li>second item third subitem</li>
+                <li>item</li>
+            </ol>
+            <!-- Here is the closing </li> tag -->
+        </li>
+        <li>third item</li>
+    </ul>
+
+    <img src="https://www.w3schools.com/images/colorpicker.gif" alt="Альтернативный текст">
+    <h2>Собственная картинка</h2>
+    <img class="large-image" src="imgs/pexels-lukas.jpg" alt="Картинка с Pexels">
+    <h2>Картинка с текстом</h2>
+    <p><img src="https://www.w3schools.com/images/colorpicker.gif" alt="Альтернативный текст">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae, consequuntur dicta dolores earum est inventore praesentium sequi. Cupiditate dolorum ex illum maiores nesciunt numquam odio officia officiis reprehenderit! Provident.</span><span>Asperiores, iure labore? Aperiam aspernatur eaque enim, eos fugit ipsa labore, magni, maxime obcaecati omnis quas quia quos tempora totam voluptatem. Delectus distinctio ipsa molestiae nam voluptatem? Odio, placeat soluta.</span></p>
+
+    <h2 class="box-model">Тестовый заголовок box model</h2>
+    <a href="https://google.com">Ссылка на сайт google.com</a>
+    <a href="https://google.com"><img src="https://www.w3schools.com/images/colorpicker.gif" alt="Альтернативный текст"></a>
+    <a href="#document-title">Вввввверх!</a>
+</div>
+</body>
+</html>
