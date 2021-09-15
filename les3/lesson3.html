@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <title>Занятие 3</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jscode.js" async></script>
 </head>
 <body>
 <div class="container">
+    <div>
+        <h2>Javascript</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores, doloribus eaque earum impedit in ipsa minima possimus, quae sequi suscipit vel veniam! Assumenda laboriosam neque porro quam ullam.</span></p>
+<!--        <script>-->
+<!--            // Javascript-->
+<!--            // alert("Hello from JavaScript!");-->
+<!--        </script>-->
+        <p id="par">paragraph 2</p>
+<!--        <script src="jscode-other.js" defer></script>-->
+        <button onclick="func_name()">Вызвать функцию</button>
+    </div>
     <div>
         <h2>Формы</h2>
         <form action="">
@@ -22,7 +34,7 @@
                 <input type="file">
             </div>
             <div>
-                <textarea name="ta" id="ta" cols="50" rows="10" placeholder="Placeholder">Text in textarea</textarea>
+                <textarea onkeydown="ta_change()" name="ta" id="ta" cols="50" rows="10" placeholder="Placeholder">Text in textarea</textarea>
             </div>
             <div>
                 <input type="radio" name="radioBlock1" id="item1">
@@ -72,6 +84,7 @@
             <div>
                 <input type="submit" value="Отправить супер-форму">
             </div>
+            <button><u>К</u>нопка</button>
         </form>
     </div>
 </div>

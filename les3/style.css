@@ -56,3 +56,19 @@ form div {
 /*input {*/
 /*    background-color: crimson;*/
 /*}*/
+
+span.und {
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: crimson;
+}
+
+button:focus {
+    background-color: yellow;
+}
+
+.add-class {
+    font-size: 26px;
+}
